@@ -2,13 +2,19 @@ package com.example.di;
 
 import android.util.Log;
 
+import javax.inject.Inject;
+
 public class Car {
-    MainActivity obj= new MainActivity();
+
+    private Engine engine;
+
+    @Inject
+    Car(Engine engine){
+        this.engine = engine;
+    }
 
     public String startCar() {
         Log.d("car","Car started.");
-
-        Engine engine=new Engine();
 
         engine.startEngine();
        // obj.displayToast("Engine Started");

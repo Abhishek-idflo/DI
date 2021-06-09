@@ -15,7 +15,6 @@ import dagger.hilt.android.AndroidEntryPoint;
 @AndroidEntryPoint
 public class MainActivity extends AppCompatActivity {
 
-    MainActivity obj;
     @Inject
     Car car;
 
